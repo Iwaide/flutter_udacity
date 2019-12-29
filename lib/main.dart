@@ -6,10 +6,15 @@ void main() {
     MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        backgroundColor: Colors.green[100],
         appBar: AppBar(
           title: Text('Hello Rectangle'),
         ),
-        body: Category(),
+        body: Category(
+          name: 'Settings',
+          color: Colors.blueAccent,
+          iconLocation: Icons.settings,
+        ),
       ),
     ),
   );
